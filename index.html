@@ -7,15 +7,26 @@
 <body>
   <header>
       <div>
-          <a href="#" class="logo"><img src="http://placehold.it/150x100"></a>
-          <a href="#" class="phone">+7 900 000 00 00</a>
-            <input class="search" type="search">
-          <a href="#" class="account">Личный кабинет</a>
-          <a href="#" class="basket">Корзина</a>
+          <ul>
+             <li><a href="#" class="logo"><img src="http://placehold.it/150x100"></a></li>
+             <li><a href="#" class="phone">+7 900 000 00 00</a></li>
+             <li><input class="search" type="search"></li>
+             <li> <a href="#" class="account">Личный кабинет</a></li>
+             <li><a href="#" class="basket">Корзина</a></li>
+          </ul>
       </div>
       <div>
           <ul>
-              <li>Все категории</li><img>
+              <li>Все категории
+                  <ul>
+                      <li><a href="#">Роутеры</a></li>
+                      <li><a href="#">Игровые симуляторы</a></li>
+                      <li><a href="#">Комплектующие</a></li>
+                      <li><a href="#">Периферия</a></li>
+                      <li><a href="#">Настольные лампы</a></li>
+                      <li><a href="#">Моноблоки и ноутбуки</a></li>
+                  </ul>
+              </li>
           </ul>
           <ul>
               <li><a href="#">Доставка</a></li>
@@ -27,21 +38,52 @@
 
   <main>
       <section class="slaider1">
-          <div>
-              <span>НОУТБУКИ</span>
-              <span>ДЛЯ ОФИСА И ДОМА</span>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed <br>
-              do eiusmod tempor incididunt ut labore et dolore magna </p>
+          <div class="mainslaider1">
+              <div class="slaider-radio-1">
+                  <label for="slaider11"></label>
+                  <label for="slaider12"></label>
+                  <label for="slaider13"></label>
+              </div>
+              <div class="slaider_content">
+                  <input id="slaider11"  type="radio">
+                  <div class="slaideritem11">
+                      <div>
+                          <h2>НОУТБУКИ
+                          <span>ДЛЯ ОФИСА И ДОМА</span>
+                          </h2>
+                         <img src="http://placehold.it/150x100">
+                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                            do eiusmod tempor incididunt ut labore et dolore magna</p>
+                         <a href="#" class="more">Подробнее</a>
+                      </div>
+                      <img src="http://placehold.it/150x100">
+                  </div>
+                  <input id="slaider12"  type="radio">
+                  <div class="slaideritem12">
+                      <div>
+                          <h2>ВСЯ ПЕРИФЕРИЯ
+                              <span>ПО САМЫМ НИЗКИМ ЦЕНАМ</span>
+                          </h2>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                              do eiusmod tempor incididunt ut labore et dolore magna</p>
+                          <a href="#" class="more">Подробнее</a>
+                      </div>
+                      <img src="http://placehold.it/150x100">
+                  </div>
+                  <input id="slaider13" type="radio">
+                  <div class="slaideritem13">
+                      <div>
+                          <h2>ТОЛЬКО ЭТОЙ ОСЕНЬЮ
+                              <span>СКИДКА НА ВСЕ НОУТБУКИ</span>30%
+                          </h2>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                              do eiusmod tempor incididunt ut labore et dolore magna</p>
+                          <a href="#" class="more">Подробнее</a>
+                      </div>
+                      <img src="http://placehold.it/150x100">
+                  </div>
+              </div>
           </div>
-          <a href="#">Подробнее</a>
-          <form>
-              <label for="1"></label>
-              <input id="1" type="radio">
-              <label for="2"></label>
-              <input id="2" type="radio">
-              <label for="3"></label>
-              <input id="3" type="radio">
-          </form>
       </section>
       <section>
           <ul>
@@ -53,20 +95,51 @@
               <li><img src="http://placehold.it/150x100"><a href="#">ИГРОВЫЕ СИМУЛЯТОРЫ</a></li>
           </ul>
       </section>
-      <section>
-          <div>
-              <form>
-                    <label for="4">Доставка</label>
-                    <input id="4" type="radio"><br>
-                    <label for="5">Гарантия</label>
-                    <input id="5" type="radio"><br>
-                    <label for="6">Кредит</label>
-                    <input id="6" type="radio"><br>
-              </form>
-          </div>
-
-          <div>
-
+      <section class="slaider2">
+          <div class="mainslaider2">
+              <div class="slaider_buttons2">
+                  <label for="slaider_21">Доставка</label>
+                  <label for="slaider_22">Гарантия</label>
+                  <label for="slaider_23">Кредит</label>
+              </div>
+              <div class="slaider-content2">
+                  <input id="slaider_21" type="radio">
+                  <div class="slaideritem21">
+                      <h2>Доставка</h2>
+                      <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                          do eiusmod tempor incididunt ut labore et dolore magna
+                          aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                          ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                          Duis aute irure dolor in reprehenderit in voluptate velit esse
+                          cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                          occaecat cupidatat non</p>
+                      <img src="http://placehold.it/150x100">
+                  </div>
+                  <input id="slaider_22" type="radio">
+                  <div class="slaideritem22">
+                      <h2>Гарантия</h2>
+                      <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                          do eiusmod tempor incididunt ut labore et dolore magna
+                          aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                          ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                          Duis aute irure dolor in reprehenderit in voluptate velit esse
+                          cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                          occaecat cupidatat non</p>
+                      <img src="http://placehold.it/150x100">
+                  </div>
+                  <input id="slaider_23" type="radio">
+                  <div class="slaideritem23">
+                      <h2>Кредит</h2>
+                      <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                          do eiusmod tempor incididunt ut labore et dolore magna
+                          aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                          ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                          Duis aute irure dolor in reprehenderit in voluptate velit esse
+                          cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                          occaecat cupidatat non</p>
+                      <img src="http://placehold.it/150x100">
+                  </div>
+              </div>
           </div>
       </section>
       <section>
@@ -142,7 +215,7 @@
                   <li><a href="#">Гарантия</a></li>
                   <li><a href="#">Контакты</a></li>
               </ul>
-              <img src="#">
+              <img src="http://placehold.it/150x100" class="map">
           </div>
       </div>
       <div class="footer_bottom">
