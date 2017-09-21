@@ -1,0 +1,11 @@
+.main_top_menu1{
+    list-style:none;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+    align-content:flex-end;
+    align-item:center;
+}
+.main_top_menu1+li{
+    align-self:flex-start;
+}
