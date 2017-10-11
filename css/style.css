@@ -152,22 +152,6 @@ main{
 }
 /*конец спонсеры*/
 
-/*О нас*/
-.about-us{
-    display:flex;
-    flex-direction: row;
-    justify-content: center;
-}
-.about-us-info{
-    width:60%;
-    background-color: #e7e7e7;
-}
-.spam{
-    background-color: #3c3c3c;
-    width:20%;
-}
-/*конец О нас*/
-
 /*конец main*/
 
 /*footer*/
