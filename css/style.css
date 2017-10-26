@@ -108,6 +108,11 @@ hr{
     width:15px;
     height:15px;
 }
+.menu2{
+	display:flex;
+    justify-content: center;
+    background-color: #f0f0f0;
+}
 .main_top_menu2{
 	font-weight: bold;
     font-size:16pt;
@@ -121,16 +126,12 @@ hr{
     justify-content:center;
     flex-wrap:nowrap;
 }
-.menu2{
-	display:flex;
-    justify-content: center;
-    background-color: #f0f0f0;
-}
 .main_top_menu2 li{
     width:100px;
     padding-top:25px;
     padding-right: 100px;
 }
+
 .main_top_menu2 a{
     color:#3c3c3c;
 }
@@ -138,6 +139,19 @@ hr{
 .categories{
     padding-left:50px;
     flex-grow:1;
+}
+.plus_sign{
+    position: relative;
+}
+.plus_sign::after{
+    content: '+';
+    color: #b3b3b3;
+    font-size:21pt;
+    position:absolute;
+    left:170px;
+    top:-3px;
+    width:15px;
+    height:15px;
 }
 .categories ul{
     height:200px;
@@ -154,19 +168,7 @@ hr{
 .categories ul a{
     color:#6d5b5b;
 }
-.plus_sign{
-    position: relative;
-}
-.plus_sign::after{
-    content: '+';
-    color: #b3b3b3;
-    font-size:21pt;
-    position:absolute;
-    left:170px;
-    top:-3px;
-    width:15px;
-    height:15px;
-}
+
 /*конец Категории*/
 /*Конец меню*/
 
@@ -261,31 +263,6 @@ input[type=radio]:checked + .slide{
     color:#3c3c3c;
 }
 /*конец первого слайдера*/
-/*Категории*/
-.categories{
-    margin-left:200px;
-    flex-grow:1;
-}
-.categories ul{
-    display:none;
-}
-.categories:hover ul{
-    height:200px;
-    background-color: #f0f0f0;
-    display:flex;
-    width:600px;
-    flex-wrap:wrap;
-}
-.categories ul li{
-    width:auto;
-    padding:15px;
-    font-weight:normal;
-}
-.categories ul a{
-    color:#6d5b5b;
-}
-/*конец Категории*/
-
 /*конец Меню*/
 /*начало main*/
 main{
@@ -297,7 +274,7 @@ main{
     display:flex;
     justify-content: center;
 }
-.products div{/*Кружочки*/
+.products div{/*Круги*/
     width:160px;
     height:155px;
     background-color:#f0f0f0;
@@ -314,7 +291,9 @@ main{
 .products{
     display:flex;
     flex-direction:row;
-    justify-content:space-around;
+    justify-content:space-between;
+	padding-left:0;
+    width:1155px;
 }
 .products li{
     text-align: center;
