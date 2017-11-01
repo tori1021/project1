@@ -243,6 +243,12 @@ hr{
 input[type=radio]:checked + .slide{
     order: 1;
 }
+.slaider-radio-1:first-child{
+    position:absolute;
+	display:inline-flex;
+	margin-left:460px;
+	margin-top:350px;
+}
 .more{
     width: 205px;
     padding:15px 55px 15px 55px;
@@ -302,6 +308,89 @@ main{
 
 /*конец Каталог*/
 
+
+/*Слайдер 2*/
+.slaider2{
+    display:flex;
+    margin-left:65px;
+    justify-content: center;
+}
+.slaider2 input{
+    display:none;
+}
+.mainslaider2{/*центрирование*/
+    width:1200px;
+    display:flex;
+    overflow: hidden;
+}
+.slaider_radio_buttons2{
+	padding-right:50px;
+    height:190px;
+    display:flex;
+    flex-direction:column;
+    justify-content: space-around;
+}
+.slaider_radio_buttons2 label{
+    text-align:center;
+    padding:16px 0 16px 0;
+    border:1px solid #3c3c3c;
+    color:#3c3c3c;
+    width:250px;
+}
+.slaider_radio_buttons2 label:active{
+	color: #e9b637;
+    border-color: #3c3c3c;
+    background-color: #3c3c3c;
+    opacity: 0.5;
+}
+.slaider_radio_buttons2 label:hover{
+	color: #e9b637;
+    border-color: #3c3c3c;
+    background-color: #3c3c3c;
+ }
+ 
+/*Слайды*/
+.slaideritem21{
+    width:950px;
+    height:187px;
+    background-image: url(../img/Delivery.png);
+    background-position: 80% 20%;
+    background-repeat: no-repeat;
+}
+.slaideritem22{
+    width:950px;
+    height:187px;
+    background-image: url(../img/Guarantee.png);
+    background-position: 80% 20%;
+    background-repeat: no-repeat;
+}
+.slaideritem23{
+    width:950px;
+    height:187px;
+    background-image: url(../img/Credit.png);
+    background-position: 80% 20%;
+    background-repeat: no-repeat;
+
+}
+/*конец Слайды*/
+.slide_slider_2{
+    color:#3c3c3c;
+    font-size:12pt;
+    flex-shrink: 0;
+    order:2;
+}
+.slide_slider_2 p{
+    width:480px;
+}
+.slide_slider_2 h2{
+    margin-top:10px;
+    width:560px;
+}
+input[type=radio]:checked + .slide_slider_2{
+    order: 1;
+}
+/*конец Слайдера 2*/
+
 /*Спонсеры*/
 .sponsers{
     display:flex;
@@ -349,7 +438,7 @@ main{
     width:250px;
     border:4px solid #f0c52e;
 }
-.about-us-info a::before{
+.about_us_info a::before{
     z-index:1;
     color:black;
     position:absolute;
@@ -360,7 +449,7 @@ main{
     height:10px;
     font-size:16pt;
 }
-.about-us-info li{
+.about_us_info li{
     color: #8c8c8c;
     margin-top:30px;
     list-style-image: url(../img/marker.png);
