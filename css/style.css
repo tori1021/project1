@@ -15,6 +15,10 @@ hr{
     margin:40px 0 40px 0;
     border: 1px solid #d1d1d1;
 }
+.wrapper {
+    width: 1200px;
+    margin: 0 auto;
+}
 /*Меню*/
 .menu1{
     display:flex;
@@ -100,6 +104,12 @@ hr{
     position: relative;
     color:white;
 }
+.account:hover{
+    color:#e9b637;
+}
+.basket:hover{
+    color:#e9b637;
+}
 .account::before{
     content: ' ';
     background-image: url(../img/account.png);
@@ -135,10 +145,14 @@ hr{
 .main_top_menu2 a{
     color:#3c3c3c;
 }
+.main_top_menu2 a:hover{
+    color:#e9b637;
+}
 /*Категории*/
 .categories{
     padding-left:50px;
     flex-grow:1;
+	z-index:100;
 }
 .plus_sign{
     position: relative;
@@ -153,17 +167,31 @@ hr{
     width:15px;
     height:15px;
 }
+
+.categories:hover ul{
+    display:flex;
+}
+	
 .categories ul{
-    height:200px;
+    position:absolute;
+	flex-shrink: 0;
     background-color: #f0f0f0;
     display:none;
-    width:600px;
+    height:120px;
     flex-wrap:wrap;
+	left:0px;
+	width:785px;
+	padding-right:580px;
+	font-size:smaller;
+
 }
 .categories ul li{
-    width:auto;
+    width:auto;'
+	margin-left:30px;
+	margin-right:20px;
     padding:15px;
     font-weight:normal;
+	
 }
 .categories ul a{
     color:#6d5b5b;
@@ -252,6 +280,9 @@ input[type=radio]:checked + .slide{
 	margin-top:350px;
 	justify-content:space-between;
 }
+.Decoration:hover{
+    background: white;
+}
 .more{
     width: 205px;
     padding:15px 55px 15px 55px;
@@ -290,6 +321,9 @@ main{
     border:solid 6px #e9b637;
     border-radius:100px;
 }
+.products div:hover{/*Круги*/
+    background-color:#e9b637;
+}
 .products img{
     position: relative;
     top:50px;
@@ -317,6 +351,7 @@ main{
     display:flex;
     margin-left:65px;
     justify-content: center;
+	height:360px;
 }
 .slider2 input{
     display:none;
@@ -324,14 +359,18 @@ main{
 .mainslider2{/*центрирование*/
     width:1200px;
     display:flex;
+	align-items:center;
     overflow: hidden;
 }
 .slider_radio_buttons2{
 	padding-right:50px;
-    height:190px;
+	padding-top:30px;
+	padding-bottom:30px;
+    height:220px;
     display:flex;
     flex-direction:column;
-    justify-content: space-around;
+    justify-content: space-between;
+	border-right:1px solid lightgrey;
 }
 .slider_radio_buttons2 label{
     text-align:center;
@@ -381,12 +420,13 @@ main{
     font-size:12pt;
     flex-shrink: 0;
     order:2;
+	padding-left:50px;
 }
 .slide_slider_2 p{
     width:480px;
 }
 .slide_slider_2 h2{
-    margin-top:10px;
+	display:flex;
     width:560px;
 }
 input[type=radio]:checked + .slide_slider_2{
@@ -399,8 +439,12 @@ input[type=radio]:checked + .slide_slider_2{
     display:flex;
     justify-content: center;
 }
+.sponsers ul li:hover{
+opacity:0.5;
+}
 .sponsers ul{
     padding: 0;
+	padding-bottom:45px;
     display: flex;
     justify-content: space-around;
     flex-wrap:nowrap;
@@ -479,8 +523,14 @@ input[type=radio]:checked + .slide_slider_2{
     width:365px;
     text-align:center;
     background-color: #e9b637;
-    border:none;
+	border:2px solid #e9b637;
     color:#3c3c3c;
+}
+.subscribe:hover{
+    background-color: white;
+    border-left:2px solid white;
+	border-right:2px solid white ;
+    color:#e9b637;
 }
 .spam{
     color:white;
@@ -580,6 +630,9 @@ footer{
     color:white;
     font-size:18pt;
 }
+.footer_bottom_menu a:hover{
+    color:#e9b637;
+}
 .social{
     display:flex;
     justify-content: center;
@@ -589,5 +642,172 @@ footer{
     font-size:26pt;
     color:white;
 }
+.phone2:hover{
+    color:#e9b637;
+}
 
 /*конец footer*/
+
+/* окно авторизации*/
+.authorization{
+    padding:50px 80px 60px 80px;
+    height:285px;
+    width:300px;
+    background: #f7f4f1;
+    font-size: 10pt;
+    box-shadow:0 10px 50px 0 #505151;
+}
+.authorization-window{
+    display:none;
+    position: fixed;
+    top:13%;
+    left:33%;
+    align-items: flex-start;
+}
+.authorization div{
+    margin:10px 0 20px 0;
+    display: flex;
+    justify-content:space-between;
+}
+.authorization div input{
+    display:none;
+}
+.authorization label{
+    position: relative;
+    margin-left: 20px;
+    padding-left: 10px;
+}
+.authorization h2{
+    font-size: 20pt;
+    margin:0;
+}
+.authorization a{
+    text-decoration: underline;
+    color:black;
+}
+input[name="remember_me"] + label:before{
+    position:absolute;
+    top:-2px;
+    left:-20px;
+    content:url("../img/RememberMe.png");
+}
+input[name="remember_me"]:checked + label:before{
+    position:absolute;
+    content:url("../img/RememberMeChecked.png");
+}
+.authorization form{
+    display: flex;
+    flex-direction: column;
+}
+.field{
+    width:266px;
+    border:2px solid black;
+    height:9px;
+    padding:15px;
+    font-size: 14pt;
+    margin-bottom: 10px;
+    color:black;
+    background: #f9f6f3;
+}
+.logIn{
+    padding:16px 0 17px 0;
+    width:300px;
+    background: black;
+    border:none;
+    color:white;
+}
+.exit{
+    margin-left:10px;
+    cursor: pointer;
+}
+/* окно авторизации*/
+/*Напишите нам*/
+.write_us-window{
+	display:none;
+    align-items:flex-start;
+    justify-content: space-between;
+    box-shadow: 0 10px 50px 0 #505151;
+    width:840px;
+    padding:22px 22px 160px 100px;
+    height:391px;
+    position: fixed;
+    top:10%;
+    left:13%;
+    background: white;
+}
+.write_us-window label{
+    font-size:14pt;
+    font-weight:bold;
+}
+.write_us-window p{
+    margin: 40px 0 14px 0;
+}
+.write_us{
+    margin-top:25px;
+}
+.write_us form{
+    margin-top:36px;
+    width:760px;
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.write_us input{
+    width:340px;
+    height:50px;
+    padding-left:20px;
+    background: #f2f2f2;
+    border:none;
+    margin:13px 0 42px 0;
+}
+.write_us input[name='letter']{
+    height:155px;
+    width:740px;
+}
+.submit:before{
+    color:black;
+    top:11px;
+    position:absolute;
+    background: #e9b637;
+    width:200px;
+    height:8px;
+    content: '';
+}
+.submit{
+    margin-top:13px;
+    color:black;
+    position: relative;
+}
+.submit p{
+    margin:0;
+    order:2;
+    position: relative;
+    left:35px;
+    font-size:18pt;
+    font-weight:bold;
+}
+.close{
+    border-radius:50px;
+    height:55px;
+    width:55px;
+    background: url("../img/close.png") center #e9b637;
+	background-repeat:no-repeat;
+    cursor:pointer;
+}
+/*конец Напишите нам*/
+.show{
+    display:flex;
+}
+/*СТРАНИЦА ДВА*/
+.path{padding-top:5px;
+      padding-left:50px;
+      border-bottom:1px solid lightgrey;
+}
+.filter{
+	display:flex;
+	justify-content:center;
+	margin-left:50px;
+	width:300px;
+	height:500px;
+	background-color:#606060;
+}

@@ -9,7 +9,7 @@
 <body>
    <header>
       <div class="menu1">
-          <ul class="main_top_menu1">
+          <ul class="main_top_menu1 wrapper">
              <li class="logo"><a href="#"><img src="img/logo.png"></a></li>
              <li ><a href="#" class="phone">+7 900 000 00 00</a></li>
               <li><form><input type="search" placeholder="Поиск по сайту" id="searcher"><label for="searcher"></label></form></li>
@@ -18,7 +18,7 @@
           </ul>
       </div>
       <div class="menu2">
-          <ul class="main_top_menu2">
+          <ul class="main_top_menu2 wrapper">
               <li class="categories"><a href="#" class="plus_sign">Все категории</a>
                   <ul>
                       <li><a href="#">Роутеры</a></li>
@@ -37,12 +37,12 @@
   </header>
 
   <main>
-      <section class="slider1">
+      <section class="slider1 wrapper">
           <div class="mainslider1">
               <div class="slider-radio-1">
-                  <div><label for="slider1_1"> </label></div>
-                  <div><label for="slider1_2"> </label></div>
-                  <div><label for="slider1_3"> </label></div>
+                  <div class="Decoration"><label for="slider1_1" id="label1"> </label></div>
+                  <div class="Decoration"><label for="slider1_2" id="label2"> </label></div>
+                  <div class="Decoration"><label for="slider1_3" id="label3"> </label></div>
               </div>
 			  <input id="slider1_1" name="slider1" type="radio">
 			  <div class="slider1_slide1 slide">
@@ -77,8 +77,7 @@
           </div>
      </section>
 	  <hr>
-      <section class="catalog">
-	      <a name="catalog"></a>
+      <section class="catalog wrapper">
           <ul class="products">
               <li><a href="catalog.html"><div><img src="img/monoblocs_and_laptops.png" alt="МОНОБЛОКИ И НОУТБУКИ"></div><br>МОНОБЛОКИ И НОУТБУКИ</a></li>
               <li><a href="#"><div><img src="img/periphery.png" alt="ПЕРИФЕРИЯ"></div><br>ПЕРИФЕРИЯ</a></li>
@@ -89,7 +88,7 @@
           </ul>
       </section>
 	  <hr>
-      <section class="slider2">
+      <section class="slider2 wrapper">
           <div class="mainslider2">
               <div class="slider_radio_buttons2">
                   <label for="slider_21">Доставка</label>
@@ -132,7 +131,7 @@
          </div>
       </section>
 	  <hr>
-      <section class="sponsers">
+      <section class="sponsers wrapper">
           <ul>
               <li><a href="#"><img src="img/brand1.png" class="schneider"></a></li>
               <li><a href="#"><img src="img/brand2.png" class="legrand"></a></li>
@@ -144,7 +143,7 @@
               <li><a href="#"><img src="img/brand8.png" class="CCT"></a></li>
           </ul>
       </section>
-      <section class="about_us">
+      <section class="about_us wrapper">
 		  <div class="about_us_info">
 			  <h2>НАША КОМПАНИЯ</h2>
 			  <hr class="about_us_line">
@@ -179,8 +178,8 @@
   </main>
 
   <footer>
-      <div class="wrapper_top_footer">
-          <div class="footer_top">
+      <div class="wrapper_top_footer ">
+          <div class="footer_top wrapper">
               <div class="info">
                   <a href="#" class="logo"><img src="img/logo.png"></a>
                   <div class="address">
@@ -215,6 +214,44 @@
                  </ul>
 		  </div>    
       </div>
-  </footer>
+  </footer>	  
+  <div class="authorization-window">
+	  <div class="authorization">
+		  <form>
+				<h2>ЛИЧНЫЙ КАБИНЕТ</h2>
+				<p>ВВЕДИТЕ ПОЖАЛУЙСТА СВОЙ ЛОГИН И ПАРОЛЬ</p>
+				<input class="login field" name="login" placeholder="ЛОГИН">
+				<input class="passWord field" type="password" name="password" placeholder="ПАРОЛЬ">
+				<div>
+					 <input id="rememberMe" type="checkbox" checked name="remember_me"><label for="rememberMe">ЗАПОМНИТЕ МЕНЯ</label>
+					 <a href="#">Я ЗАБЫЛ ПАРОЛЬ!</a>
+				</div>
+				<input class="logIn" type="button" value="ВОЙТИ">
+		  </form>
+	  </div>
+	  <div class="exit">
+		  <img src="img/exit.png">
+	  </div>
+   </div>
+   <div class="write_us-window">
+       <div class="write_us">
+		   <form>
+			     <label><a>Ваше имя:</a><br>
+						<input placeholder="Представьтесь, пожалуйста" name="name">
+				 </label>
+				 <label><a>Ваш e-mail:</a><br>
+						<input placeholder="Для отправки ответа" name="e-mail">
+				 </label>
+				 <label><a>Текст письма:</a><br>
+						<input placeholder="В свободной форме" name="letter">
+				 </label>
+					<a class="submit" href="#"><p>ОТПРАВИТЬ</p></a>
+			</form>
+	   </div>
+	   <div class="close"></div>
+   </div>
+   <script src="js/js1.js">
+   
+   </script>
 </body>
 </html>
