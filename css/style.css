@@ -924,6 +924,24 @@ footer{
     font-size: 20pt;
     margin:0;
 }
+.user-sign{
+    position: relative;
+}
+.user-sign:after{
+    position:absolute;
+    top:-37px;
+    right:15px;
+    content:url(../img/user.png);
+}
+.lock-sign{
+    position: relative;
+}
+.lock-sign:after{
+    position:absolute;
+    top:-37px;
+    right:15px;
+    content:url(../img/lock.png);
+}
 .authorization a{
     text-decoration: underline;
     color:black;
