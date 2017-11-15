@@ -5,6 +5,9 @@
 input{
     outline:0;
 }
+textarea{
+    outline:0;
+}
 body{
     font-family:"Century Gothic", 'Arial', sans-serif;
 }
@@ -861,7 +864,7 @@ footer{
     background: url(../img/twitter-hover.png) no-repeat;
 }
 .mailru:hover{
-    background: url(../img/mailHov.png) no-repeat;
+    background: url(../img/mail-hover.png) no-repeat;
 }
 .facebook:hover{
     background: url(../img/facebook-hover.png) no-repeat;
@@ -1036,9 +1039,13 @@ input[name="remember_me"]:checked + label:before{
     border:none;
     margin:13px 0 42px 0;
 }
-.write_us input[name='letter']{
+.write_us textarea[name='letter']{
     height:155px;
     width:740px;
+	padding-left:20px;
+    background: #f2f2f2;
+    border:none;
+    margin:13px 0 42px 0;
 }
 .submit:before{
     color:black;
